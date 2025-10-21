@@ -19,17 +19,21 @@ The entire workflow — from **data extraction to analysis** — has been automa
 
 ### 1. Data Extraction
 - Connected **Kaggle API** with **VS Code** to fetch the Walmart dataset.  
-- Imported the dataset directly into the working environment.  
+- Imported the dataset directly into the working environment.
+ --
 
 ### 2. Data Preparation
 Used **Pandas** in Jupyter Notebook to:  
 - Unzip and load the dataset.  
 - Clean data by removing **duplicates** and handling **null values**.  
-- Created a **“total” column** to calculate overall revenue/sales per transaction.  
+- Created a **“total” column** to calculate overall revenue/sales per transaction.
+
+- --
 
 ### 3. Database Integration
 - Created a **MySQL engine** using **SQLAlchemy** for seamless data transfer.  
-- Imported the cleaned dataset into **MySQL** for structured storage and querying.  
+- Imported the cleaned dataset into **MySQL** for structured storage and querying.
+- --
 
 ### 4. Exploratory Data Analysis (EDA)
 Performed SQL-based EDA to:  
@@ -38,6 +42,7 @@ Performed SQL-based EDA to:
 - Segment data by **customer type**, **gender**, and **payment method**.  
 - Calculate **profit margins**, **average sales**, and **peak sales hours**.  
 
+--
 ### 5. Business Insights
 Answered key business questions such as:  
 - Which branch generated the highest revenue?  
@@ -45,6 +50,7 @@ Answered key business questions such as:
 - How do customer types impact spending patterns?  
 Derived insights to support **data-driven decision-making**.
 
+--
 ### 6. Documentation
 - Documented the complete process — from **data extraction** to **business analysis**.  
 - Uploaded all **scripts**, **SQL queries**, and **outputs** to GitHub for reference.  
