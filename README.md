@@ -1,47 +1,75 @@
 # 🛒 Walmart Sales Analysis Using Python & SQL
 
 ## 📌 Project Overview
-This project focuses on analyzing Walmart’s retail sales data using **Python (Pandas)** and **MySQL**.  
-It demonstrates an end-to-end data analytics workflow — from **data extraction** and **cleaning** in Jupyter Notebook to **SQL-based exploratory data analysis (EDA)** and **business insights generation**.
+This project focuses on analyzing **Walmart’s retail sales data** to uncover business insights and patterns using **Python** and **MySQL**.  
+The entire workflow — from **data extraction to analysis** — has been automated through a pipeline, ensuring efficiency and reproducibility.
 
 ---
 
 ## 🧰 Tools & Technologies
-- **Python** (Pandas, SQLAlchemy)
-- **MySQL**
-- **VS Code**
-- **Jupyter Notebook**
-- **Kaggle API**
+- **Python** (Pandas, SQLAlchemy)  
+- **MySQL**  
+- **VS Code**  
+- **Jupyter Notebook**  
+- **Kaggle API** (for data access)
 
 ---
 
 ## ⚙️ Project Workflow
 
-### 1. **Data Extraction**
+### 1. Data Extraction
 - Connected **Kaggle API** with **VS Code** to fetch the Walmart dataset.  
-- Downloaded and unzipped the dataset directly in **Jupyter Notebook**.  
+- Imported the dataset directly into the working environment.  
 
-### 2. **Data Cleaning using Pandas**
-- Loaded and explored data using the **Pandas** library.  
-- Removed **duplicates** and handled **missing values**.  
-- Standardized column names and data types for compatibility.  
-- Created a new **“total” column** to calculate total sales per transaction.  
+### 2. Data Preparation
+Used **Pandas** in Jupyter Notebook to:  
+- Unzip and load the dataset.  
+- Clean data by removing **duplicates** and handling **null values**.  
+- Created a **“total” column** to calculate overall revenue/sales per transaction.  
 
-### 3. **Database Engine Creation**
-- Built a **SQLAlchemy engine** to connect Python with MySQL:
-  ```python
-  from sqlalchemy import create_engine
-  engine = create_engine("mysql+pymysql://root@localhost:3306/walmart_db")
+### 3. Database Integration
+- Created a **MySQL engine** using **SQLAlchemy** for seamless data transfer.  
+- Imported the cleaned dataset into **MySQL** for structured storage and querying.  
 
-├── data/                # Raw and cleaned datasets
-├── notebooks/           # Jupyter notebooks (data cleaning & transformation)
-├── sql_queries/         # SQL scripts for EDA and insights
-├── reports/             # Analysis documentation
-└── README.md            # Project overview
+### 4. Exploratory Data Analysis (EDA)
+Performed SQL-based EDA to:  
+- Identify **top-performing branches** and **product categories**.  
+- Analyze **sales trends over time**.  
+- Segment data by **customer type**, **gender**, and **payment method**.  
+- Calculate **profit margins**, **average sales**, and **peak sales hours**.  
+
+### 5. Business Insights
+Answered key business questions such as:  
+- Which branch generated the highest revenue?  
+- What time of day drives the most sales?  
+- How do customer types impact spending patterns?  
+Derived insights to support **data-driven decision-making**.
+
+### 6. Documentation
+- Documented the complete process — from **data extraction** to **business analysis**.  
+- Uploaded all **scripts**, **SQL queries**, and **outputs** to GitHub for reference.  
+
+---
+
+## 📈 Key Learnings
+- Built a **data pipeline** from Kaggle → Python → MySQL.  
+- Integrated **Python and SQL** for end-to-end analytics.  
+- Applied **EDA techniques** to uncover actionable insights.  
+- Strengthened understanding of **data cleaning, transformation, and reporting**.  
+
+---
+
+## 📂 Project Structure
+├── data/ # Raw and cleaned datasets
+├── notebooks/ # Jupyter notebooks (data cleaning & transformation)
+├── sql_queries/ # SQL scripts for EDA and insights
+├── reports/ # Analysis documentation
+└── README.md # Project overview
 
 
 ---
 
-Would you like me to also write a **short GitHub project description** (2–3 lines) for the top of your repository page — something catchy and recruiter-friendly like:  
-> “End-to-end sales analysis pipeline using Python and SQL — from data extraction via Kaggle API to MySQL-based EDA and business insights.”
-
+## 👩‍💻 Author
+**Sheetal Lalwani**  
+📧 []  
+💻 []
